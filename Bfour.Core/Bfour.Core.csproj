@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Entities\" />
+    <None Remove="Repository\" />
+    <None Remove="Services\" />
+    <None Remove="UnitOfWorks\" />
+    <None Remove="DTO\" />
+    <None Remove="ResultModel\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repository\" />
+    <Folder Include="Services\" />
+    <Folder Include="UnitOfWorks\" />
+    <Folder Include="DTO\" />
+    <Folder Include="ResultModel\" />
+  </ItemGroup>
+</Project>

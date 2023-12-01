@@ -1,0 +1,591 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+<div ng-controller="OrderController">
+    <!--begin::Toolbar-->
+    <div id="kt_app_toolbar" class="app-toolbar py-3 py-lg-6">
+        <!--begin::Toolbar container-->
+        <div id="kt_app_toolbar_container" class="app-container container-xxl d-flex flex-stack">
+            <!--begin::Page title-->
+            <div class="page-title d-flex flex-column justify-content-center flex-wrap me-3">
+                <!--begin::Title-->
+                <h1 class="page-heading d-flex text-dark fw-bold fs-3 flex-column justify-content-center my-0">Satışlar</h1>
+                <!--end::Title-->
+            </div>
+            <!--end::Page title-->
+            <!--begin::Actions-->
+            <div class="d-flex align-items-center gap-2 gap-lg-3">
+                <!--begin::Primary button-->
+                <a href="#" class="btn btn-sm fw-bold btn-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_create_app" ng-click="GetData()">Yeni Satış Ekle</a>
+                <!--end::Primary button-->
+            </div>
+            <!--end::Actions-->
+        </div>
+        <!--end::Toolbar container-->
+    </div>
+    <!--end::Toolbar-->
+    <!--begin::Content-->
+    <div id="kt_app_content" class="app-content flex-column-fluid">
+        <!--begin::Content container-->
+        <div id="kt_app_content_container" class="app-container container-xxl">
+            <!--begin::Products-->
+            <div class="card card-flush">
+                <!--begin::Card header-->
+                <div class="card-header align-items-center py-5 gap-2 gap-md-5">
+                    <!--begin::Card title-->
+                    <div class="card-title">
+                        <!--begin::Search-->
+                        <div class="d-flex align-items-center position-relative my-1">
+                            <i class="ki-duotone ki-magnifier fs-3 position-absolute ms-4">
+                                <span class="path1"></span>
+                                <span class="path2"></span>
+                            </i>
+                            <input type="text" ng-model="search" class="form-control form-control-solid w-250px ps-12" placeholder="Arama Yap" />
+                        </div>
+                        <!--end::Search-->
+                        <!--begin::Export buttons-->
+                        <div id="kt_ecommerce_report_sales_export" class="d-none"></div>
+                        <!--end::Export buttons-->
+                    </div>
+                    <!--end::Card title-->
+                    <!--begin::Card toolbar-->
+                    <div class="card-toolbar flex-row-fluid justify-content-end gap-5">
+                        <!--begin::Export dropdown-->
+                        <button type="button" class="btn btn-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                            <i class="ki-duotone ki-exit-up fs-2">
+                                <span class="path1"></span>
+                                <span class="path2"></span>
+                            </i>Export Report
+                        </button>
+                        <!--begin::Menu-->
+                        <div id="kt_ecommerce_report_sales_export_menu" class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-200px py-4" data-kt-menu="true">
+                            <!--begin::Menu item-->
+                            <div class="menu-item px-3">
+                                <a href="#" class="menu-link px-3" data-kt-ecommerce-export="copy">Copy to clipboard</a>
+                            </div>
+                            <!--end::Menu item-->
+                            <!--begin::Menu item-->
+                            <div class="menu-item px-3">
+                                <a href="#" class="menu-link px-3" data-kt-ecommerce-export="excel">Export as Excel</a>
+                            </div>
+                            <!--end::Menu item-->
+                            <!--begin::Menu item-->
+                            <div class="menu-item px-3">
+                                <a href="#" class="menu-link px-3" data-kt-ecommerce-export="csv">Export as CSV</a>
+                            </div>
+                            <!--end::Menu item-->
+                            <!--begin::Menu item-->
+                            <div class="menu-item px-3">
+                                <a href="#" class="menu-link px-3" data-kt-ecommerce-export="pdf">Export as PDF</a>
+                            </div>
+                            <!--end::Menu item-->
+                        </div>
+                        <!--end::Menu-->
+                        <!--end::Export dropdown-->
+                    </div>
+                    <!--end::Card toolbar-->
+                </div>
+                <!--end::Card header-->
+                <!--begin::Card body-->
+                <div class="card-body pt-0">
+                    <!--begin::Table-->
+                    <table class="table align-middle table-row-dashed fs-6 gy-5" id="orderTable">
+                        <thead>
+                            <tr class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
+                                <th class="min-w-200px">Ad Soyad</th>
+                                <th class="min-w-150px">Birim Fiyat</th>
+                                <th class="min-w-150px">İndirimli Fiyat</th>
+                                <th class="min-w-150px">Net Fiyat</th>
+                                <th class="min-w-150px">İskonto Oranı</th>
+                                <th class="min-w-150px">Ödeme Tipi</th>
+                                <th class="min-w-150px">Kullanılan Pos</th>
+                                <th class="min-w-100px text-end"></th>
+                            </tr>
+                        </thead>
+                        <tbody class="fw-semibold text-gray-600">
+                            <tr ng-repeat="item in orderList| filter:search">
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="symbol symbol-45px me-5">
+                                            <img ng-show="item.member.gender==='Kadın'" src="assets/media/avatars/300-14.jpg" alt="" />
+                                            <img ng-show="item.member.gender==='Erkek'" src="assets/media/avatars/300-15.jpg" alt="" />
+
+                                        </div>
+                                        <div class="d-flex justify-content-start flex-column">
+                                            <span class="text-dark fw-bold text-hover-primary fs-6">{{item.member.firstName}} {{item.member.lastName}}</span>
+                                            @* <span class="text-muted fw-semibold text-muted d-block fs-7">HTML, JS, ReactJS</span> *@
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span href="#" class="text-dark d-block fs-6" ng-bind-template="{{item.totalUnitPrice!=null?item.totalUnitPrice:'0'}} ₺"></span>
+                                    @* <span class="text-muted fw-semibold text-muted d-block fs-7">Web, UI/UX Design</span> *@
+                                </td>
+                                <td>
+                                    <span href="#" class="text-dark d-block fs-6" ng-bind-template="{{item.totalDiscountPrice!=null?item.totalDiscountPrice:'0'}} ₺"></span>
+                                    @* <span class="text-muted fw-semibold text-muted d-block fs-7">Web, UI/UX Design</span> *@
+                                </td>
+                                <td>
+                                    <span href="#" class="text-dark d-block fs-6" ng-bind-template="{{item.totalNetSalePrice!=null?item.totalNetSalePrice:'0'}} ₺"></span>
+                                    @* <span class="text-muted fw-semibold text-muted d-block fs-7">Web, UI/UX Design</span> *@
+                                </td>
+                                <td>
+                                    <span class="badge badge-light-primary">%{{item.discountRate!=null?item.discountRate:'0'}}</span>
+
+                                </td>
+                                <td>
+                                    <span class="badge badge-light-success">{{item.paymentType.text}}</span>
+                                </td>
+                                <td>
+                                    <span href="#" class="text-dark d-block fs-6">{{item.posName}}</span>
+                                    @* <span class="text-muted fw-semibold text-muted d-block fs-7">Web, UI/UX Design</span> *@
+                                </td>
+                                <td>
+                                    <div class="d-flex justify-content-end flex-shrink-0">
+                                        <a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1" data-bs-toggle="modal" ng-click="getOrderDetails(item)" data-bs-target="#kt_modal_order_detail">
+                                            <i class="ki-duotone ki-switch fs-2">
+                                                <span class="path1"></span>
+                                                <span class="path2"></span>
+                                            </i>
+                                        </a>
+                                        <a ng-click="delete(item)" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm">
+                                            <i class="ki-duotone ki-trash fs-2">
+                                                <span class="path1"></span>
+                                                <span class="path2"></span>
+                                                <span class="path3"></span>
+                                                <span class="path4"></span>
+                                                <span class="path5"></span>
+                                            </i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--end::Table-->
+                </div>
+                <!--end::Card body-->
+            </div>
+            <!--end::Products-->
+        </div>
+        <!--end::Content container-->
+    </div>
+    <!--end::Content-->
+    <!--begin::Modal - Create App-->
+    <div class="modal fade" id="kt_modal_create_app" tabindex="-1" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+        <!--begin::Modal dialog-->
+        <div class="modal-dialog modal-dialog-centered mw-900px">
+            <!--begin::Modal content-->
+            <div class="modal-content">
+                <!--begin::Modal header-->
+                <div class="modal-header">
+                    <!--begin::Modal title-->
+                    <h2>Satış Kartı Ekle</h2>
+                    <!--end::Modal title-->
+                    <!--begin::Close-->
+                    <div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
+                        <i class="ki-duotone ki-cross fs-1">
+                            <span class="path1"></span>
+                            <span class="path2"></span>
+                        </i>
+                    </div>
+                    <!--end::Close-->
+                </div>
+                <!--end::Modal header-->
+                <!--begin::Modal body-->
+                <div class="modal-body py-lg-10 px-lg-10">
+                    <!--begin::Stepper-->
+                    <div class="stepper stepper-pills stepper-column d-flex flex-column flex-xl-row flex-row-fluid" id="kt_modal_create_app_stepper">
+                        <!--begin::Aside-->
+                        <div class="d-flex justify-content-center justify-content-xl-start flex-row-auto w-100 w-xl-250px">
+                            <!--begin::Nav-->
+                            <div class="stepper-nav ps-lg-10">
+                                <!--begin::Step 1-->
+                                <div class="stepper-item current" data-kt-stepper-element="nav">
+                                    <!--begin::Wrapper-->
+                                    <div class="stepper-wrapper">
+                                        <!--begin::Icon-->
+                                        <div class="stepper-icon w-40px h-40px">
+                                            <i class="ki-duotone ki-check stepper-check fs-2"></i>
+                                            <span class="stepper-number">1</span>
+                                        </div>
+                                        <!--end::Icon-->
+                                        <!--begin::Label-->
+                                        <div class="stepper-label">
+                                            <h3 class="stepper-title">Hizmetler</h3>
+                                        </div>
+                                        <!--end::Label-->
+                                    </div>
+                                    <!--end::Wrapper-->
+                                    <!--begin::Line-->
+                                    <div class="stepper-line h-40px"></div>
+                                    <!--end::Line-->
+                                </div>
+                                <!--end::Step 1-->
+                                <!--begin::Step 2-->
+                                <div class="stepper-item" data-kt-stepper-element="nav">
+                                    <!--begin::Wrapper-->
+                                    <div class="stepper-wrapper">
+                                        <!--begin::Icon-->
+                                        <div class="stepper-icon w-40px h-40px">
+                                            <i class="ki-duotone ki-check stepper-check fs-2"></i>
+                                            <span class="stepper-number">2</span>
+                                        </div>
+                                        <!--begin::Icon-->
+                                        <!--begin::Label-->
+                                        <div class="stepper-label">
+                                            <h3 class="stepper-title">Fiyatlar</h3>
+                                        </div>
+                                        <!--begin::Label-->
+                                    </div>
+                                    <!--end::Wrapper-->
+                                    <!--begin::Line-->
+                                    <div class="stepper-line h-40px"></div>
+                                    <!--end::Line-->
+                                </div>
+                                <!--end::Step 2-->
+                                <!--begin::Step 3-->
+                                <div class="stepper-item mark-completed" data-kt-stepper-element="nav">
+                                    <!--begin::Wrapper-->
+                                    <div class="stepper-wrapper">
+                                        <!--begin::Icon-->
+                                        <div class="stepper-icon w-40px h-40px">
+                                            <i class="ki-duotone ki-check stepper-check fs-2"></i>
+                                            <span class="stepper-number">3</span>
+                                        </div>
+                                        <!--end::Icon-->
+                                        <!--begin::Label-->
+                                        <div class="stepper-label">
+                                            <h3 class="stepper-title">Üye Bilgileri</h3>
+                                        </div>
+                                        <!--end::Label-->
+                                    </div>
+                                    <!--end::Wrapper-->
+                                    <!--begin::Line-->
+                                    <div class="stepper-line h-40px"></div>
+                                    <!--end::Line-->
+                                </div>
+                                <!--end::Step 3-->
+                            </div>
+                            <!--end::Nav-->
+                        </div>
+                        <!--begin::Aside-->
+                        <!--begin::Content-->
+                        <div style="border-left: 2px solid #f4f4f4;" class="flex-row-fluid px-lg-15">
+                            <!--begin::Form-->
+                            <form class="form" novalidate="novalidate" id="kt_modal_create_app_form">
+                                <!--begin::Step 1-->
+                                <!--begin::Table-->
+                                <div class="current" data-kt-stepper-element="content">
+                                    <table class="table align-middle table-row-dashed fs-6 gy-5" id="kt_ecommerce_category_table">
+                                        <thead style="color:#b17d02">
+                                            <tr class="text-start text-bold fw-bold fs-7 text-uppercase gs-0">
+                                                <th class="min-w-250px">Hizmet Türü</th>
+                                                <th class="text-end min-w-70px">Paket İçeriği</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="fw-semibold text-gray-600">
+                                            <tr ng-repeat="product in productList">
+                                                <td>{{product.name}}</td>
+                                                <td>
+                                                    <select class="form-select" aria-label="Seçiniz" ng-change="selectData(product)" ng-model="product.selectedPackage">
+                                                        <option value="">Seçiniz</option>
+                                                        <option ng-repeat="item in groupedItems">{{item[0]}}</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <!--end::Table body-->
+                                    </table>
+                                </div>
+                                <!--end::Table-->
+                                <!--end::Step 1-->
+                                <!--begin::Step 2-->
+                                <div data-kt-stepper-element="content">
+                                    <!--begin::Table-->
+                                    <table class="table align-middle table-row-dashed fs-6 gy-5" id="kt_ecommerce_category_table">
+                                        <thead style="color:#b17d02">
+                                            <tr class="text-start text-bold fw-bold fs-7 text-uppercase gs-0">
+                                                <th style="font-weight:bold" class="min-w-250px">Hizmet Türü</th>
+                                                <th class="text-end min-w-70px">Tutar</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="fw-semibold text-gray-600">
+                                            <tr ng-repeat="selectedProduct in selectedProductList">
+                                                <td>{{selectedProduct.name}}</td>
+                                                <td class="text-end text-bold">₺{{selectedProduct.discountPrice}}</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!--end::Table-->
+                                </div>
+
+                                <!--end::Step 2-->
+                                <!--begin::Step 3-->
+                                <div data-kt-stepper-element="content">
+                                    <!--begin::Form-->
+                                    <form id="kt_account_profile_details_form" class="form" name="orderValid">
+                                        <!--begin::Card body-->
+                                        <div class="card-body p-9">
+                                            <!--begin::Input group-->
+                                            <div class="row mb-6">
+                                                <!--begin::Label-->
+                                                <label class="col-lg-4 col-form-label required fw-semibold fs-6">Üye Seçiniz</label>
+                                                <!--end::Label-->
+                                                <!--begin::Col-->
+                                                <div class="col-lg-8 fv-row fv-plugins-icon-container">
+                                                    <!--begin::Input-->
+                                                    <select class="form-select" aria-label="Seçiniz" ng-model="order.memberId" ng-init="order.memberId = memberList[0].id" required>
+                                                        <option value="">Seçiniz</option>
+                                                        <option ng-repeat="member in memberList" value="{{member.id}}">{{member.firstName}} {{member.lastName}}</option>
+
+                                                    </select>
+                                                    <!--end::Input-->
+                                                    <div class="fv-plugins-message-container invalid-feedback"></div>
+                                                </div>
+                                                <!--end::Col-->
+                                            </div>
+                                            <!--end::Input group-->
+                                            <!--begin::Input group-->
+                                            <div class="row mb-6">
+                                                <!--begin::Label-->
+                                                <label class="col-lg-4 col-form-label fw-semibold fs-6">Toplam Birim Tutar</label>
+                                                <!--end::Label-->
+                                                <!--begin::Col-->
+                                                <div class="col-lg-8 fv-row">
+                                                    <!--begin::Input-->
+                                                    <input type="text" class="form-control form-control-lg form-control-solid" id="sessiondduration" placeholder="TL Cinsinden Toplam Tutar Giriniz" name="sessiondduration" value="₺{{order.totalUnitPrice}}" disabled>
+                                                    <!--end::Hint-->
+                                                </div>
+                                                <!--end::Col-->
+                                            </div>
+                                            <!--end::Input group-->
+                                            <!--begin::Input group-->
+                                            <div class="row mb-6">
+                                                <!--begin::Label-->
+                                                <label class="col-lg-4 col-form-label fw-semibold fs-6">Toplam İndirimli Tutar</label>
+                                                <!--end::Label-->
+                                                <!--begin::Col-->
+                                                <div class="col-lg-8 fv-row">
+                                                    <!--begin::Input-->
+                                                    <input type="text" class="form-control form-control-lg form-control-solid" id="sessiondduration" placeholder="TL Cinsinden Toplam Tutar Giriniz" name="sessiondduration" value="₺{{order.totalDiscountPrice}}" disabled>
+                                                    <!--end::Hint-->
+                                                </div>
+                                                <!--end::Col-->
+                                            </div>
+                                            <!--end::Input group-->
+                                            <!--begin::Input group-->
+                                            <div class="row mb-6">
+                                                <!--begin::Label-->
+                                                <label class="col-lg-4 col-form-label fw-semibold fs-6">Net Ödenecek Tutar</label>
+                                                <!--end::Label-->
+                                                <!--begin::Col-->
+                                                <div class="col-lg-8 fv-row">
+                                                    <!--begin::Input-->
+                                                    <input type="text" class="form-control form-control-lg form-control-solid" id="sessiondduration" placeholder="TL Cinsinden Toplam Tutar Giriniz" name="sessiondduration" value="₺" ng-model="order.totalNetSalePrice">
+                                                    <!--end::Hint-->
+                                                </div>
+                                                <!--end::Col-->
+                                            </div>
+                                            <!--end::Input group-->
+                                            <!--begin::Input group-->
+                                            <div class="row mb-6">
+                                                <!--begin::Label-->
+                                                <label class="col-lg-4 col-form-label required fw-semibold fs-6">Ödeme Türü</label>
+                                                <!--end::Label-->
+                                                <!--begin::Col-->
+                                                <div class="col-lg-8 fv-row fv-plugins-icon-container">
+                                                    <!--begin::Input-->
+                                                    <select class="form-select" aria-label="Seçiniz" ng-model="order.paymentTypeId" ng-change="showHidePosDiv()" ng-init="order.paymentTypeId = paymentTypeList[0].id" required>
+                                                        <option value="">Seçiniz</option>
+                                                        <option ng-repeat="paymentType in paymentTypeList" value="{{paymentType.id}}">{{paymentType.text}}</option>
+                                                    </select>
+                                                    <!--end::Input-->
+                                                    <div class="fv-plugins-message-container invalid-feedback"></div>
+                                                </div>
+                                                <!--end::Col-->
+                                            </div>
+                                            <!--end::Input group-->
+                                            <!--begin::Input group-->
+                                            <div class="row mb-6" ng-show="show===true">
+                                                <!--begin::Label-->
+                                                <label class="col-lg-4 col-form-label fw-semibold fs-6">Kullanılan Pos</label>
+                                                <!--end::Label-->
+                                                <!--begin::Col-->
+                                                <div class="col-lg-8 fv-row fv-plugins-icon-container">
+                                                    <!--begin::Input-->
+                                                    <select class="form-select" aria-label="Seçiniz" ng-model="order.posName" ng-init="order.posId = posList[0].id">
+                                                        <option value="">Seçiniz</option>
+                                                        <option ng-repeat="pos in posList" value="{{pos.posName}}">{{pos.posName}}</option>
+
+                                                    </select>
+                                                    <!--end::Input-->
+                                                    <div class="fv-plugins-message-container invalid-feedback"></div>
+                                                </div>
+                                                <!--end::Col-->
+                                            </div>
+                                            <!--end::Input group-->
+                                        </div>
+                                        <!--end::Card body-->
+                                    </form>
+                                    <!--end::Form-->
+                                </div>
+                                <!--end::Step 3-->
+                                <!--begin::Actions-->
+                                <div class="d-flex flex-stack pt-10">
+                                    <!--begin::Wrapper-->
+                                    <div class="me-2">
+                                        <button type="button" class="btn btn-lg btn-light-success me-3" data-kt-stepper-action="previous">
+                                            <i class="ki-duotone ki-arrow-left fs-3 me-1">
+                                                <span class="path1"></span>
+                                                <span class="path2"></span>
+                                            </i>Geri
+                                        </button>
+                                    </div>
+                                    <!--end::Wrapper-->
+                                    <!--begin::Wrapper-->
+                                    <div>
+                                        <button type="button" class="btn btn-lg btn-success" data-kt-stepper-action="submit" ng-click="submitOrder()">
+                                            <span class="indicator-label">
+                                                İşlemi Tamamla
+                                                <i class="ki-duotone ki-arrow-right fs-3 ms-2 me-0">
+                                                    <span class="path1"></span>
+                                                    <span class="path2"></span>
+                                                </i>
+                                            </span>
+                                            <span class="indicator-progress">
+                                                Please wait...
+                                                <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
+                                            </span>
+                                        </button>
+                                        <button ng-show="selectedProductList.length>0" type="button" class="btn btn-lg btn-success" data-kt-stepper-action="next" ng-click="updateSelectedProductList()">
+                                            İleri
+                                            <i class="ki-duotone ki-arrow-right fs-3 ms-1 me-0">
+                                                <span class="path1"></span>
+                                                <span class="path2"></span>
+                                            </i>
+                                        </button>
+                                    </div>
+                                    <!--end::Wrapper-->
+                                </div>
+                                <!--end::Actions-->
+                            </form>
+                        </div><!--end::Form-->
+                    </div>
+                    <!--end::Content-->
+                </div>
+                <!--end::Stepper-->
+            </div>
+            <!--end::Modal body-->
+        </div>
+        <!--end::Modal content-->
+    </div>
+    <!--end::Modal dialog-->
+
+    <div class="modal fade" id="kt_modal_order_detail" tabindex="-1" aria-hidden="true">
+        <!--begin::Modal dialog-->
+        <div style="max-width: 1200px!important;" class="modal-dialog modal-dialog-centered">
+            <!--begin::Modal content-->
+            <div class="modal-content">
+                <!--begin::Modal header-->
+                <div class="modal-header">
+                    <h2>Sipariş Detayı</h2>
+                    <div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
+                        <i class="ki-duotone ki-cross fs-1">
+                            <span class="path1"></span>
+                            <span class="path2"></span>
+                        </i>
+                    </div>
+                    <!--end::Close-->
+                </div>
+                <!--end::Modal header-->
+                <!--begin::Modal body-->
+                <div class="modal-body py-lg-10 px-lg-10">
+                    <!--begin::Form-->
+                    <!--end::Form--<div class="card card-flush py-4 flex-row-fluid overflow-hidden">
+                    <!--end::Card header-->
+                    <!--begin::Card body-->
+                    <div class="card-body pt-0">
+                        <div class="table-responsive">
+                            <!--begin::Table-->
+                            <table class="table align-middle table-row-dashed fs-6 gy-12 mb-0">
+                                <thead>
+                                    <tr style="font-weight:bold;" class="text-start fs-7 text-uppercase gs-0">
+                                        <th class="min-w-175px">Hizmet</th>
+                                        <th class="min-w-100px text-end">Birim Fiyatı</th>
+                                        <th class="min-w-100px text-end">Paket Sayısı</th>
+                                        <th class="min-w-100px text-end">Fiyat</th>
+                                        <th class="min-w-70px text-end">İndirimli Fiyat</th>
+                                        <th class="min-w-70px text-end">Net Satış Fiyat</th>
+                                        <th class="min-w-100px text-end">Net İndirim Oranı</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="fw-semibold">
+                                    <tr ng-repeat="item in orderView.orderDetails.$values">
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <div class="symbol symbol-50px me-3">
+                                                    <!-- Örnek bir simge ekleyebilirsiniz -->
+                                                    <img src="assets/media/product/1.svg" alt="" />
+                                                </div>
+                                                <div class="ms-5">
+                                                    <span style="font-weight:bold;" class="text-hover-primary">{{item.product.name}}</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="text-end">₺{{item.unitPrice}}</td>
+                                        <td class="text-end">{{item.packageCount}}</td>
+                                        <td class="text-end">₺{{item.unitPrice * item.packageCount}}</td>
+                                        <td class="text-end">₺{{item.discountPrice}}</td>
+                                        <td style="font-weight:bold;" class="text-end text-danger">₺{{item.netSalePrice}}</td>
+                                        <td style="font-weight:bold;" class="text-end text-danger">%{{item.discountRate}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-weight: bold;" colspan="6" class="text-end">
+                                            Toplam Birim Tutar:
+                                        </td>
+                                        <td class="text-end">₺{{orderView.totalUnitPrice}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-weight: bold;" colspan="6" class="text-end">Toplam İndirimli Tutar:</td>
+                                        <td class="text-end">₺{{orderView.totalDiscountPrice}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-weight: bold" colspan="6" class="text-end text-danger">Net Ödenecek Tutar:</td>
+                                        <td style="font-weight:bold" class="text-end text-danger">₺{{orderView.totalNetSalePrice}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-weight: bold" colspan="6" class="text-end text-danger">Toplam İndirim:</td>
+                                        <td style="font-weight:bold" class="text-end text-danger">%{{orderView.discountRate}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-weight: bold;" colspan="6" class="text-end">Ödeme Tipi:</td>
+                                        <td class="text-end">{{orderView.paymentType.text}}</td>
+                                    </tr>
+                                    @*<tr>
+                                    <td colspan="4" class="text-end">Kullanılan Pos</td>
+                                    <td class="text-dark fs-3 fw-bolder text-end">-</td>
+                                    </tr>*@
+                                </tbody>
+                            </table>
+                            <!--end::Table-->
+                        </div>
+                    </div>
+
+                    <!--end::Card body-->
+                </div>>
+            </div>
+            <!--end::Modal body-->
+        </div>
+        <!--end::Modal content-->
+    </div>
+    <!--end::Modal dialog-->
+</div>
+
+</div>
+<!--end::Modal - Create App-->
+</div>
+@section scripts {
+    <script type="text/javascript" src="~/Scripts/Pages/order.js"></script>
+}

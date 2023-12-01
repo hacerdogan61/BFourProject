@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ZP8xirlJzFgHQBFdVpCzldw6EWfleTGFY4plAlnO/kE=",
+  "Source": "Bfour.Api",
+  "BasePath": "_content/Bfour.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

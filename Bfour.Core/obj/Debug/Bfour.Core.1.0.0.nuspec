@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Bfour.Core</id>
+    <version>1.0.0</version>
+    <authors>Bfour.Core</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net7.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Core/bin/Debug/net7.0/Bfour.Core.dll" target="lib/net7.0/Bfour.Core.dll" />
+  </files>
+</package>

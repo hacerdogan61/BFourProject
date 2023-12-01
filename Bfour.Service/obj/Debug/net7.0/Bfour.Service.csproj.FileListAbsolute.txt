@@ -1,0 +1,68 @@
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Service/bin/Debug/net7.0/Bfour.Service.deps.json
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Service/bin/Debug/net7.0/Bfour.Service.dll
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Service/bin/Debug/net7.0/Bfour.Service.pdb
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Service/bin/Debug/net7.0/Bfour.Core.dll
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Service/bin/Debug/net7.0/Bfour.Repository.dll
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Service/bin/Debug/net7.0/Bfour.Repository.pdb
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Service/bin/Debug/net7.0/Bfour.Core.pdb
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Service/obj/Debug/net7.0/Bfour.Service.csproj.AssemblyReference.cache
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Service/obj/Debug/net7.0/Bfour.Service.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Service/obj/Debug/net7.0/Bfour.Service.AssemblyInfoInputs.cache
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Service/obj/Debug/net7.0/Bfour.Service.AssemblyInfo.cs
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Service/obj/Debug/net7.0/Bfour.Service.csproj.CoreCompileInputs.cache
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Service/obj/Debug/net7.0/Bfour.Service.csproj.CopyComplete
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Service/obj/Debug/net7.0/Bfour.Service.dll
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Service/obj/Debug/net7.0/refint/Bfour.Service.dll
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Service/obj/Debug/net7.0/Bfour.Service.pdb
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Service/obj/Debug/net7.0/ref/Bfour.Service.dll
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Service/bin/Debug/net7.0/Bfour.Service.deps.json
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Service/bin/Debug/net7.0/Bfour.Service.dll
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Service/bin/Debug/net7.0/Bfour.Service.pdb
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Service/bin/Debug/net7.0/Bfour.Core.dll
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Service/bin/Debug/net7.0/Bfour.Repository.dll
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Service/bin/Debug/net7.0/Bfour.Repository.pdb
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Service/bin/Debug/net7.0/Bfour.Core.pdb
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Service/obj/Debug/net7.0/Bfour.Service.csproj.AssemblyReference.cache
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Service/obj/Debug/net7.0/Bfour.Service.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Service/obj/Debug/net7.0/Bfour.Service.AssemblyInfoInputs.cache
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Service/obj/Debug/net7.0/Bfour.Service.AssemblyInfo.cs
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Service/obj/Debug/net7.0/Bfour.Service.csproj.CoreCompileInputs.cache
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Service/obj/Debug/net7.0/Bfour.Service.csproj.CopyComplete
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Service/obj/Debug/net7.0/Bfour.Service.dll
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Service/obj/Debug/net7.0/refint/Bfour.Service.dll
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Service/obj/Debug/net7.0/Bfour.Service.pdb
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Service/obj/Debug/net7.0/ref/Bfour.Service.dll
+C:/Users/Home/Desktop/Bfour.Web.Project/BfourProject/Bfour.Service/bin/Debug/net7.0/Bfour.Service.deps.json
+C:/Users/Home/Desktop/Bfour.Web.Project/BfourProject/Bfour.Service/bin/Debug/net7.0/Bfour.Service.dll
+C:/Users/Home/Desktop/Bfour.Web.Project/BfourProject/Bfour.Service/bin/Debug/net7.0/Bfour.Service.pdb
+C:/Users/Home/Desktop/Bfour.Web.Project/BfourProject/Bfour.Service/bin/Debug/net7.0/Bfour.Core.dll
+C:/Users/Home/Desktop/Bfour.Web.Project/BfourProject/Bfour.Service/bin/Debug/net7.0/Bfour.Repository.dll
+C:/Users/Home/Desktop/Bfour.Web.Project/BfourProject/Bfour.Service/bin/Debug/net7.0/Bfour.Repository.pdb
+C:/Users/Home/Desktop/Bfour.Web.Project/BfourProject/Bfour.Service/bin/Debug/net7.0/Bfour.Core.pdb
+C:/Users/Home/Desktop/Bfour.Web.Project/BfourProject/Bfour.Service/obj/Debug/net7.0/Bfour.Service.csproj.AssemblyReference.cache
+C:/Users/Home/Desktop/Bfour.Web.Project/BfourProject/Bfour.Service/obj/Debug/net7.0/Bfour.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Home/Desktop/Bfour.Web.Project/BfourProject/Bfour.Service/obj/Debug/net7.0/Bfour.Service.AssemblyInfoInputs.cache
+C:/Users/Home/Desktop/Bfour.Web.Project/BfourProject/Bfour.Service/obj/Debug/net7.0/Bfour.Service.AssemblyInfo.cs
+C:/Users/Home/Desktop/Bfour.Web.Project/BfourProject/Bfour.Service/obj/Debug/net7.0/Bfour.Service.csproj.CoreCompileInputs.cache
+C:/Users/Home/Desktop/Bfour.Web.Project/BfourProject/Bfour.Service/obj/Debug/net7.0/Bfour.Service.csproj.CopyComplete
+C:/Users/Home/Desktop/Bfour.Web.Project/BfourProject/Bfour.Service/obj/Debug/net7.0/Bfour.Service.dll
+C:/Users/Home/Desktop/Bfour.Web.Project/BfourProject/Bfour.Service/obj/Debug/net7.0/refint/Bfour.Service.dll
+C:/Users/Home/Desktop/Bfour.Web.Project/BfourProject/Bfour.Service/obj/Debug/net7.0/Bfour.Service.pdb
+C:/Users/Home/Desktop/Bfour.Web.Project/BfourProject/Bfour.Service/obj/Debug/net7.0/ref/Bfour.Service.dll
+/Users/hacerdogan/Downloads/Bfour.Web.Project/BfourProject/Bfour.Service/bin/Debug/net7.0/Bfour.Service.deps.json
+/Users/hacerdogan/Downloads/Bfour.Web.Project/BfourProject/Bfour.Service/bin/Debug/net7.0/Bfour.Service.dll
+/Users/hacerdogan/Downloads/Bfour.Web.Project/BfourProject/Bfour.Service/bin/Debug/net7.0/Bfour.Service.pdb
+/Users/hacerdogan/Downloads/Bfour.Web.Project/BfourProject/Bfour.Service/bin/Debug/net7.0/Bfour.Core.dll
+/Users/hacerdogan/Downloads/Bfour.Web.Project/BfourProject/Bfour.Service/bin/Debug/net7.0/Bfour.Repository.dll
+/Users/hacerdogan/Downloads/Bfour.Web.Project/BfourProject/Bfour.Service/bin/Debug/net7.0/Bfour.Repository.pdb
+/Users/hacerdogan/Downloads/Bfour.Web.Project/BfourProject/Bfour.Service/bin/Debug/net7.0/Bfour.Core.pdb
+/Users/hacerdogan/Downloads/Bfour.Web.Project/BfourProject/Bfour.Service/obj/Debug/net7.0/Bfour.Service.csproj.AssemblyReference.cache
+/Users/hacerdogan/Downloads/Bfour.Web.Project/BfourProject/Bfour.Service/obj/Debug/net7.0/Bfour.Service.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hacerdogan/Downloads/Bfour.Web.Project/BfourProject/Bfour.Service/obj/Debug/net7.0/Bfour.Service.AssemblyInfoInputs.cache
+/Users/hacerdogan/Downloads/Bfour.Web.Project/BfourProject/Bfour.Service/obj/Debug/net7.0/Bfour.Service.AssemblyInfo.cs
+/Users/hacerdogan/Downloads/Bfour.Web.Project/BfourProject/Bfour.Service/obj/Debug/net7.0/Bfour.Service.csproj.CoreCompileInputs.cache
+/Users/hacerdogan/Downloads/Bfour.Web.Project/BfourProject/Bfour.Service/obj/Debug/net7.0/Bfour.Service.csproj.CopyComplete
+/Users/hacerdogan/Downloads/Bfour.Web.Project/BfourProject/Bfour.Service/obj/Debug/net7.0/Bfour.Service.dll
+/Users/hacerdogan/Downloads/Bfour.Web.Project/BfourProject/Bfour.Service/obj/Debug/net7.0/refint/Bfour.Service.dll
+/Users/hacerdogan/Downloads/Bfour.Web.Project/BfourProject/Bfour.Service/obj/Debug/net7.0/Bfour.Service.pdb
+/Users/hacerdogan/Downloads/Bfour.Web.Project/BfourProject/Bfour.Service/obj/Debug/net7.0/ref/Bfour.Service.dll

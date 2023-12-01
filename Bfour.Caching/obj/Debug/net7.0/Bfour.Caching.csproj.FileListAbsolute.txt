@@ -1,0 +1,48 @@
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Caching/bin/Debug/net7.0/Bfour.Caching.deps.json
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Caching/bin/Debug/net7.0/Bfour.Caching.dll
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Caching/bin/Debug/net7.0/Bfour.Caching.pdb
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Caching/obj/Debug/net7.0/Bfour.Caching.csproj.AssemblyReference.cache
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Caching/obj/Debug/net7.0/Bfour.Caching.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Caching/obj/Debug/net7.0/Bfour.Caching.AssemblyInfoInputs.cache
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Caching/obj/Debug/net7.0/Bfour.Caching.AssemblyInfo.cs
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Caching/obj/Debug/net7.0/Bfour.Caching.csproj.CoreCompileInputs.cache
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Caching/obj/Debug/net7.0/Bfour.Caching.dll
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Caching/obj/Debug/net7.0/refint/Bfour.Caching.dll
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Caching/obj/Debug/net7.0/Bfour.Caching.pdb
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Caching/obj/Debug/net7.0/ref/Bfour.Caching.dll
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Caching/bin/Debug/net7.0/Bfour.Caching.deps.json
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Caching/bin/Debug/net7.0/Bfour.Caching.dll
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Caching/bin/Debug/net7.0/Bfour.Caching.pdb
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Caching/obj/Debug/net7.0/Bfour.Caching.csproj.AssemblyReference.cache
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Caching/obj/Debug/net7.0/Bfour.Caching.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Caching/obj/Debug/net7.0/Bfour.Caching.AssemblyInfoInputs.cache
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Caching/obj/Debug/net7.0/Bfour.Caching.AssemblyInfo.cs
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Caching/obj/Debug/net7.0/Bfour.Caching.csproj.CoreCompileInputs.cache
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Caching/obj/Debug/net7.0/Bfour.Caching.dll
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Caching/obj/Debug/net7.0/refint/Bfour.Caching.dll
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Caching/obj/Debug/net7.0/Bfour.Caching.pdb
+/Users/hacerdogan/Desktop/Masaüstü - Hacer MacBook Pro/BfourProject/Bfour.Caching/obj/Debug/net7.0/ref/Bfour.Caching.dll
+C:/Users/Home/Desktop/Bfour.Web.Project/BfourProject/Bfour.Caching/bin/Debug/net7.0/Bfour.Caching.deps.json
+C:/Users/Home/Desktop/Bfour.Web.Project/BfourProject/Bfour.Caching/bin/Debug/net7.0/Bfour.Caching.dll
+C:/Users/Home/Desktop/Bfour.Web.Project/BfourProject/Bfour.Caching/bin/Debug/net7.0/Bfour.Caching.pdb
+C:/Users/Home/Desktop/Bfour.Web.Project/BfourProject/Bfour.Caching/obj/Debug/net7.0/Bfour.Caching.csproj.AssemblyReference.cache
+C:/Users/Home/Desktop/Bfour.Web.Project/BfourProject/Bfour.Caching/obj/Debug/net7.0/Bfour.Caching.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Home/Desktop/Bfour.Web.Project/BfourProject/Bfour.Caching/obj/Debug/net7.0/Bfour.Caching.AssemblyInfoInputs.cache
+C:/Users/Home/Desktop/Bfour.Web.Project/BfourProject/Bfour.Caching/obj/Debug/net7.0/Bfour.Caching.AssemblyInfo.cs
+C:/Users/Home/Desktop/Bfour.Web.Project/BfourProject/Bfour.Caching/obj/Debug/net7.0/Bfour.Caching.csproj.CoreCompileInputs.cache
+C:/Users/Home/Desktop/Bfour.Web.Project/BfourProject/Bfour.Caching/obj/Debug/net7.0/Bfour.Caching.dll
+C:/Users/Home/Desktop/Bfour.Web.Project/BfourProject/Bfour.Caching/obj/Debug/net7.0/refint/Bfour.Caching.dll
+C:/Users/Home/Desktop/Bfour.Web.Project/BfourProject/Bfour.Caching/obj/Debug/net7.0/Bfour.Caching.pdb
+C:/Users/Home/Desktop/Bfour.Web.Project/BfourProject/Bfour.Caching/obj/Debug/net7.0/ref/Bfour.Caching.dll
+/Users/hacerdogan/Downloads/Bfour.Web.Project/BfourProject/Bfour.Caching/bin/Debug/net7.0/Bfour.Caching.deps.json
+/Users/hacerdogan/Downloads/Bfour.Web.Project/BfourProject/Bfour.Caching/bin/Debug/net7.0/Bfour.Caching.dll
+/Users/hacerdogan/Downloads/Bfour.Web.Project/BfourProject/Bfour.Caching/bin/Debug/net7.0/Bfour.Caching.pdb
+/Users/hacerdogan/Downloads/Bfour.Web.Project/BfourProject/Bfour.Caching/obj/Debug/net7.0/Bfour.Caching.csproj.AssemblyReference.cache
+/Users/hacerdogan/Downloads/Bfour.Web.Project/BfourProject/Bfour.Caching/obj/Debug/net7.0/Bfour.Caching.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hacerdogan/Downloads/Bfour.Web.Project/BfourProject/Bfour.Caching/obj/Debug/net7.0/Bfour.Caching.AssemblyInfoInputs.cache
+/Users/hacerdogan/Downloads/Bfour.Web.Project/BfourProject/Bfour.Caching/obj/Debug/net7.0/Bfour.Caching.AssemblyInfo.cs
+/Users/hacerdogan/Downloads/Bfour.Web.Project/BfourProject/Bfour.Caching/obj/Debug/net7.0/Bfour.Caching.csproj.CoreCompileInputs.cache
+/Users/hacerdogan/Downloads/Bfour.Web.Project/BfourProject/Bfour.Caching/obj/Debug/net7.0/Bfour.Caching.dll
+/Users/hacerdogan/Downloads/Bfour.Web.Project/BfourProject/Bfour.Caching/obj/Debug/net7.0/refint/Bfour.Caching.dll
+/Users/hacerdogan/Downloads/Bfour.Web.Project/BfourProject/Bfour.Caching/obj/Debug/net7.0/Bfour.Caching.pdb
+/Users/hacerdogan/Downloads/Bfour.Web.Project/BfourProject/Bfour.Caching/obj/Debug/net7.0/ref/Bfour.Caching.dll
